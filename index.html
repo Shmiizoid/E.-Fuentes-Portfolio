@@ -5,34 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
+    <script src="app.js"></script>
     <title>Emilio Fuentes Portfolio</title>
 </head>
 <body>
     <header>
         <a href="index.html">Emilio A. Fuentes</a>
     </header>
-   <div>
-    <h1>Home</h1>
-    <main>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quasi cumque quo rem, eum doloribus obcaecati magni ut, suscipit magnam blanditiis nobis cum praesentium illum facilis temporibus in unde architecto.</main>
-    <script src="app.js"></script>
-    <nav>
-        <ul id="links">
-            <li>
-                <a  href="about-me.html">About Me</a>
-            </li>
-            <li>
-                <a  href="projects.html">Projects</a>
-            </li>
-            <li> 
-                <a  href="contact.html">Contact Me</a>
-            </li>
-            <li>
-                <a href="resume.html">Resume</a>
-            </li>
-        </ul>
+ <h1>Home</h1>
+   <div class="container">
+        <nav>
+            <ul id="links">
+                <li>
+                    <a  href="about-me.html">About Me</a>
+                </li>
+                <li>
+                    <a  href="projects.html">Projects</a>
+                </li>
+                <li> 
+                    <a  href="contact.html">Contact Me</a>
+                </li>
 
-    </nav>
-    </div>
+             <!-- //Modal Container! -->
+
+                <li id="openModal">
+                    <div id="modal"></div>
+                    <a href="efr.png" id="resume-link">Resume</a>
+                </li>
+            </ul>
+
+        </nav>
+        <main>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quasi cumque quo rem, eum doloribus obcaecati magni ut, suscipit magnam blanditiis nobis cum praesentium illum facilis temporibus in unde architecto.</main>
+  </div>
+    <script src="app.js"></script>
 </body>
 
 <footer>
@@ -50,5 +55,12 @@
         </ul>
 
 </footer>
+
+<div id="resume-modal" class="modal">
+    <div id="img-container">
+        <iframe id="resume-img" src="efr.png"></iframe>
+    </div>
+    <button id="close-modal">Close</button>
+</div>
 
 </html>

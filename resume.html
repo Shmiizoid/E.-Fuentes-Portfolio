@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emilio's Resume</title>
+    <link href="style.css" rel="stylesheet">
 </head>
-<link href="style.css" rel="stylesheet">
 <body>
-    <body>
-        <header>
-            <a href="index.html">Emilio A. Fuentes</a>
-        </header>
-        <h1>Resume</h1>
+    <header>
+        <a href="index.html">Emilio A. Fuentes</a>
+    </header>
+ <h1>Resume</h1>
+   <div class="container">
         <nav>
             <ul id="links">
                 <li>
@@ -24,29 +24,40 @@
                 <li> 
                     <a  href="contact.html">Contact Me</a>
                 </li>
-                <li>
-                    <a href="resume.html">Resume</a>
+
+             <!-- //Modal Container! -->
+
+                <li id="openModal">
+                    <div id="modal"></div>
+                    <a href="efr.png" id="resume-link">Resume</a>
                 </li>
             </ul>
-    
+
         </nav>
-        <script src="app.js"></script>
-    </body>
-    
-    <footer>
-            <ul>
-               <div class="image-row">
-                    <a href="https://www.linkedin.com/in/emilio-fuentes-2413a4117/" target="_blank">
-                        <img src="LinkedIn-logo.png" alt="LinkedIn Logo">
-                    </a>
-                    <a href="https://github.com/Shmiizoid" target="_blank">
-                        <img src="GitHub-logo (1).png" alt="Github Logo">
-                    </a>
-    
-    
-               </div>
-            </ul>
-    
-    </footer>
+        <main>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quasi cumque quo rem, eum doloribus obcaecati magni ut, suscipit magnam blanditiis nobis cum praesentium illum facilis temporibus in unde architecto.</main>
+  </div>
+    <script src="app.js"></script>
 </body>
-</html>
+
+<footer>
+        <ul>
+           <div class="image-row">
+                <a href="https://www.linkedin.com/in/emilio-fuentes-2413a4117/" target="_blank">
+                    <img src="LinkedIn-logo.png" alt="LinkedIn Logo">
+                </a>
+                <a href="https://github.com/Shmiizoid" target="_blank">
+                    <img src="GitHub-logo (1).png" alt="Github Logo">
+                </a>
+
+
+           </div>
+        </ul>
+
+</footer>
+
+<div id="resume-modal" class="modal">
+    <div id="img-container">
+        <iframe id="resume-img" src="efr.png"></iframe>
+    </div>
+    <button id="close-modal">Close</button>
+</div>

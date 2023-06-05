@@ -11,24 +11,31 @@
     <header>
         <a href="index.html">Emilio A. Fuentes</a>
     </header>
-    <h1>About Me</h1>
-    <nav>
-        <ul id="links">
-            <li>
-                <a  href="about-me.html">About Me</a>
-            </li>
-            <li>
-                <a  href="projects.html">Projects</a>
-            </li>
-            <li> 
-                <a  href="contact.html">Contact Me</a>
-            </li>
-            <li>
-                <a href="resume.html">Resume</a>
-            </li>
-        </ul>
+ <h1>About Me</h1>
+   <div class="container">
+        <nav>
+            <ul id="links">
+                <li>
+                    <a  href="about-me.html">About Me</a>
+                </li>
+                <li>
+                    <a  href="projects.html">Projects</a>
+                </li>
+                <li> 
+                    <a  href="contact.html">Contact Me</a>
+                </li>
 
-    </nav>
+             <!-- //Modal Container! -->
+
+                <li id="openModal">
+                    <div id="modal"></div>
+                    <a href="efr.png" id="resume-link">Resume</a>
+                </li>
+            </ul>
+
+        </nav>
+        <main>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quasi cumque quo rem, eum doloribus obcaecati magni ut, suscipit magnam blanditiis nobis cum praesentium illum facilis temporibus in unde architecto.</main>
+  </div>
     <script src="app.js"></script>
 </body>
 
@@ -48,5 +55,11 @@
 
 </footer>
 
-</html>
+<div id="resume-modal" class="modal">
+    <div id="img-container">
+        <iframe id="resume-img" src="efr.png"></iframe>
+    </div>
+    <button id="close-modal">Close</button>
+</div>
+
 </html>

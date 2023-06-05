@@ -74,3 +74,24 @@ main {
   justify-content: center;
   margin: 0;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+  justify-content: center;
+  margin-right: 30px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+  }
+  
+  .modal h2 {
+    color: antiquewhite;
+  }
