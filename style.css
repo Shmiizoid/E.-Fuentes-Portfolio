@@ -119,3 +119,17 @@ main {
     font-size: 18px;
     margin-top: 20px;
 }
+
+#aboutMe {
+    padding:50px 150px 0px 10px;
+}
+
+#project-meme {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: scale-down;
+    position: relative;
+    height: 75%;
+    width: 75%;
+}
