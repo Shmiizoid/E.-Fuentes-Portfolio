@@ -1,8 +1,7 @@
 body {
-background-color: darkslategray;
-color: antiquewhite;
+    background-color: darkslategray;
+    color: antiquewhite;
 }
-
 
 header {
     font-size: 30px;
@@ -16,7 +15,7 @@ h1 {
     color: white;
     font-weight: bold;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     text-transform: uppercase;
 }
 
@@ -28,14 +27,14 @@ ul {
 li {
     font-size: 30px;
     line-height: 1.5;
-    margin-bottom:10px;
+    margin-bottom: 10px;
     margin-top: 40px;
-    color:antiquewhite
+    color: antiquewhite;
 }
 
 .image-row {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -50,13 +49,12 @@ img {
 }
 
 #links li a {
-   text-decoration:none;
-    color:antiquewhite;
+    text-decoration: none;
+    color: antiquewhite;
 }
 
-#links li a:hover   {
-    color:black;
-    
+#links li a:hover {
+    color: black;
 }
 
 a:hover {
@@ -67,38 +65,59 @@ a:hover {
 
 a {
     text-decoration: none;
-    color:antiquewhite;
+    color: antiquewhite;
 }
 
 main {
-  justify-content: center;
-  margin: 0;
+    justify-content: center;
+    margin: 0;
 }
 
 .container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-gap: 20px;
-  justify-content: center;
-  margin-right: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    justify-content: center;
+    padding-right: 70px;
+    margin-right: 30px;
 }
+
 .modal {
     display: none;
     position: fixed;
-    top: 50%;
-    left: 50%;
+    top: 10%;
+    left: 10%;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 20px;
-    max-width: 90%;
-    max-height: 90%;
-  }
+    height: 80%;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
 
-  #resume-img {
-    max-width: 100%;
-    max-height: 100%;
-  }
-  
-  .modal h2 {
-    color: antiquewhite;
-  }
+#resume-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+#close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#img-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}

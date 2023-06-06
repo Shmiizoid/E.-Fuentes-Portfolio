@@ -8,23 +8,25 @@ console.log('working')
 // }
 
 //Modal_________________________________________
-document.addEventListener("DOMContentLoaded", function(){
-var modal = document.getElementById("resume-modal");
-var trigger = document.getElementById("resume-link");
-var closeButton = document.getElementById("close-modal");
-var resumeImage = document.getElementById("resume-img");
+console.log('working');
 
-trigger.addEventListener("click", function(event) {
-  event.preventDefault();
-  var imageLink = "efr.png";
-  resumeImage.src = imageLink;
-  modal.style.display = "block";
-});
+document.addEventListener("DOMContentLoaded", function() {
+  var modal = document.getElementById("resume-modal");
+  var trigger = document.getElementById("resume-link");
+  var closeButton = document.getElementById("close-modal");
+  var resumeImage = document.getElementById("resume-img");
 
-closeButton.addEventListener("click", function(event) {
-  modal.style.display = "none";
+  trigger.addEventListener("click", function(event) {
+    event.preventDefault();
+    var imageLink = "efr copy.png";
+    resumeImage.src = imageLink;
+    modal.style.display = "block";
+  });
+
+  closeButton.addEventListener("click", function(event) {
+    modal.style.display = "none";
+  });
 });
-})
 
 
 //Carousel_________________________________________
