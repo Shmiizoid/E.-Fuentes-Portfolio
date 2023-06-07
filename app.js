@@ -1,11 +1,13 @@
 console.log('working')
-//Click_________________________________________
-// const aboutEl = document.getElementById('About-Me')
-// console.log(aboutEl)
+//Click arrow function Landing page_________________________________________
+document.addEventListener('DOMContentLoaded', () => {
+    const pageLink = document.getElementById("landing");
+    pageLink.addEventListener('click', () => goToPage ('about-me.html'));
 
-// aboutEl addEventListener('click',function(evt)) {
-
-// }
+    const goToPage = (page) => {
+        window.location.href = page;
+    }
+});
 
 //Modal_________________________________________
 console.log('working');
