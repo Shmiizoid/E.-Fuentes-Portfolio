@@ -1,0 +1,35 @@
+body {
+    background-color: darkslategray;
+}
+
+header {
+    font-weight: bold;
+    text-decoration: none;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .front {
+    text-align: center;
+    font-size: 36px;
+  }
+
+  header:hover,
+  #landing a:hover {
+    color: black;
+    text-decoration: none;
+    font-size: 42px;
+  }
+  
+  #landing a {
+    text-decoration: none;
+    color: antiquewhite;
+  }
+ 
+
+
