@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <a href="index.html">Emilio A. Fuentes</a>
+        <a href="home.html">Emilio A. Fuentes</a>
     </header>
     <h1>Contact</h1>
     <div class="container">
@@ -30,10 +30,23 @@
                 </li>
             </ul>
         </nav>
-        <main id="aboutMe">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quasi cumque quo rem, eum doloribus obcaecati magni ut, suscipit magnam blanditiis nobis cum praesentium illum facilis temporibus in unde architecto.
-        </main>
+   
+        <form id="contact-page" onsubmit="sendMessage(event)"> 
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type = "submit">Submit</button>
+        </form>
     </div>
+    
+    
     <footer>
         <ul>
            <div class="image-row">

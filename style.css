@@ -45,7 +45,7 @@ li {
 
 img {
     height: 6vh;
-    width: 6wh;
+
 }
 
 #links li a {
@@ -132,5 +132,28 @@ main {
     position: relative;
     height: 75%;
     width: 75%;
+    max-height: fit-content;
+    max-width: fit-content;
 }
   
+#contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+input {
+    height: 2vh;
+    width: 200px;
+}
+
+textarea {
+    height: 20vh;
+    width: 400px;
+}
+
+form {
+    padding-right: 40%;
+    padding-top: 10%;
+}

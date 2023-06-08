@@ -2,7 +2,7 @@ console.log('working')
 //Click arrow function Landing page_________________________________________
 document.addEventListener('DOMContentLoaded', () => {
     const pageLink = document.getElementById("landing");
-    pageLink.addEventListener('click', () => goToPage ('about-me.html'));
+    pageLink.addEventListener('click', () => goToPage ('home.html'));
 
     const goToPage = (page) => {
         window.location.href = page;
@@ -64,3 +64,9 @@ prev.addEventListener('click', () => {
   images[previousImgIndex].getElementsByClassName.display = 'none'
   images[currentImgIndex].getElementsByClassName.display = 'block'
 })
+
+//One more just for fun
+function sendMessage(event) {
+    event.preventDefault();
+    alert('Message sent!')
+}

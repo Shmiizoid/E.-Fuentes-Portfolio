@@ -4,15 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="landing.css" rel="stylesheet">
-    <script src="app.js"></script> 
-    <title>Landing Page</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="app.js"></script>
+    <title>Emilio Fuentes Portfolio</title>
 </head>
-<body id="landing">
-    <header class="front">
-        <a>Emilio A. Fuentes</a>
-
+<body>
+    <header>
+        <a href="index.html">Emilio A. Fuentes</a>
     </header>
-    
+    <h1>Home</h1>
+    <div class="container">
+        <nav>
+            <ul id="links">
+                <li>
+                    <a href="about-me.html">About Me</a>
+                </li>
+                <li>
+                    <a href="projects.html">Projects</a>
+                </li>
+                <li> 
+                    <a href="contact.html">Contact Me</a>
+                </li>
+                <li id="openModal">
+                    <a href="#" id="resume-link">Resume</a>
+                </li>
+            </ul>
+        </nav>
+        <main id="aboutMe">
+            "I am a Software Engineer with a passion for people and product. I believe that combining the best of both can achieve anything. I enjoy the beach and spending time with the people closest to me.  I work every day to improve myself, and though I sometimes fall short, I will always try."
+        </main>
+    </div>
+    <footer>
+        <ul>
+           <div class="image-row">
+                <a href="https://www.linkedin.com/in/emilioafuentes/" target="_blank">
+                    <img src="LinkedIn-logo.png" alt="LinkedIn Logo">
+                </a>
+                <a href="https://github.com/Shmiizoid" target="_blank">
+                    <img src="GitHub-logo (1).png" alt="Github Logo">
+                </a>
+           </div>
+        </ul>
+    </footer>
+
+    <div id="resume-modal" class="modal">
+        
+          <img id="resume-img" src="efr copy.png" alt="Resume">
+          <button id="close-modal">Close</button>
+        </div>
+      </div>
 </body>
 </html>
